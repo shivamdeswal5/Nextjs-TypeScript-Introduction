@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function page() {
   return (
-    <h1>
-      Home page
-    </h1>
+    <div>
+      <h2>Second Page</h2>
+    </div>
   )
 }
