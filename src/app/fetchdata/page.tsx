@@ -12,9 +12,11 @@ export default async function page() {
             {
                 data?.products.map((product: { id: number; title: string; thumbnail:string,description:string}) => (
                     <div className={style.product} key={product.id}>
+                        <div className={style.Image}>
                         <Image  src={product.thumbnail} alt={product.title} width={100} height={100}/>
+                        </div>
                         <h3>{product.title}</h3>
-                        <p>{product?.description}</p>
+                        <p className={style.description}>{product?.description}</p>
                     </div>
                 ))
             }
