@@ -4,7 +4,6 @@ import Image from 'next/image'
 export default async function page() {
     const res  = await fetch('https://dummyjson.com/products/search?q=iphone&limit=20');
     const data = await res.json();
-    console.log(data);
   return (
     <div className={style.main}>
         <h2>Fetched Data</h2>

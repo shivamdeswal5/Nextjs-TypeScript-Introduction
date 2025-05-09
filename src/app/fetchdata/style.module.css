@@ -4,8 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: space-around;
-}
+    justify-content: space-around;}
 
 .product{
     display: flex;
